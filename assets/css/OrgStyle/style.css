@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Vazir";
+  src: url("../../fonts/Vazirmatn-Regular.ttf");
+}
+body {
+  background: linear-gradient(180deg, #f8f9fa, #e9ecef);
+  font-family: "Vazir";
+}
+.footer-home {
+  text-align: center;
+  font-size: 1.25rem;
+}
+.h3-home {
+  font-size: 1.5rem;
+}
+#footer {
+  border-radius: 18px 18px 0 0;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.05);
+  border-top: 1px solid #dee2e6;
+}
+.Email {
+  color: rgb(19, 79, 59);
+  text-decoration: none;
+  margin: 0.8em 0;
+  display: inline-block;
+}
+.footer-links {
+  text-decoration: none;
+  color: #2d6a4f;
+  transition: 0.25s ease;
+}
+.footer-links:hover {
+  color: rgb(114, 210, 214);
+}
+.footer-link-span {
+  color: #adb5bd;
+  margin: 0 0.4rem;
+}
+.nav-link {
+  color: #798189;
+  margin: 0.6rem;
+}
+.nav-link:hover {
+  color: rgb(27, 26, 26);
+}
+.NatanzSwiper {
+  width: 100%;
+  padding: 20px 10px 50px;
+}
+.NatanzSwiper .swiper-slide {
+  height: auto;
+}
+.NatanzSwiper .card {
+  height: 100%;
+}
+.NatanzSwiper img {
+  height: 250px;
+  object-fit: cover;
+}
+.NatanzSwiper .swiper-scrollbar {
+  height: 8px;
+  border-radius: 10px;
+}
+.NatanzSwiper .swiper-scrollbar-drag {
+  cursor: grab;
+  border-radius: 10px;
+}
+.NatanzSwiper .swiper-scrollbar-drag:active {
+  cursor: grabbing;
+}
+.NatanzSwiper .card {
+    transition: all 0.3s ease;
+}
+.NatanzSwiper .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
