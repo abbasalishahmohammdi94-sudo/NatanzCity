@@ -74,4 +74,67 @@ body {
 .NatanzSwiper .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+} 
+.navbar{
+    background: rgba(240, 248, 244, 0.75) !important;
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,.25);
+    box-shadow: 0 8px 24px rgba(0,0,0,.08);
+    margin: 10px;
+    border-radius: 18px;
+    top: 1rem;
+}
+#scrollTopBtn{
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 52px;
+    height: 52px;
+    display: none;
+    border: none;
+    border-radius: 50%;
+    z-index: 999;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    transition: .3s ease;
+}
+#scrollTopBtn:hover{
+    transform: translateY(-4px);
+}
+.not-found {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.not-found h1 {
+    font-size: 5rem;
+    color: #2d6a4f;
+    margin-bottom: 20px;
+}
+
+.not-found p {
+    max-width: 700px;
+    line-height: 2.2;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.not-found a {
+    margin-top: 25px;
+    padding: 12px 30px;
+    background: #2d6a4f;
+    color: white;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.not-found a:hover {
+    background: #40916c;
+    transform: translateY(-3px);
 }
