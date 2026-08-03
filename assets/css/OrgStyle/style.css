@@ -138,3 +138,28 @@ body {
     background: #40916c;
     transform: translateY(-3px);
 }
+#loader {
+    position: fixed;
+    inset: 0;
+    background: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader-spinner {
+    width: 45px;
+    height: 45px;
+    border: 5px solid #ddd;
+    border-top-color: #198754;
+    border-radius: 50%;
+    animation: spin   1s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
