@@ -1,0 +1,301 @@
+[
+  {
+    "id": 1,
+    "name": "رویال یدک",
+    "category": "لوازم یدکی خودرو",
+    "description": "رویال یدک ،عرضه قطعات خودرو ایساکو با قیمت‌های منصفانه",
+    "phone": "09131623766",
+    "address": "نطنز ، بلوار طالقانی ، جنب کوچه شهید رجائی",
+    "workTime": "9 صبح تا 12 ظهر و 4 عصر تا 20 شب",
+    "image": ""
+  },
+    {
+    "id": 2,
+    "name": "رایان ویستا",
+    "category": "کافی نت ، لوازم کامپیوتری",
+    "description": "رایان ویستا ، مرجع تخصصی خدمات کامپیوتری ، با مدیریت آقای وارسته",
+    "phone": "09139615047",
+    "address": "نطنز ، بلوار طالقانی ، رو به روی بانک توسعه تعاون",
+    "workTime": "9 صبح تا 13 بعد از ظهر ، 6 عصر تا 23 شب",
+    "image": ""
+  },
+    {
+    "id": 3,
+    "name": "هایپرمارکت خطیری",
+    "category": "سوپرمارکت",
+    "description": "عرضه انواع مواد غذایی، نوشیدنی، محصولات بهداشتی و مایحتاج روزانه.",
+    "phone": null,
+    "address": "نطنز ، بلوار طالقانی ، جنب فرش پاریس",
+    "workTime": "اطلاعاتی ثبت نشده",
+    "image": ""
+  },
+    {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+    {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+    {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+    {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },    {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  },
+      {
+    "id": 1,
+    "name": "",
+    "category": "",
+    "description": "",
+    "phone": "",
+    "address": "",
+    "workTime": "",
+    "image": ""
+  }
+]
