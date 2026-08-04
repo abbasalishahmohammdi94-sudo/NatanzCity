@@ -1,0 +1,49 @@
+.business-card {
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.business-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12) !important;
+}
+
+.business-card img {
+  transition: 0.3s ease;
+}
+
+.business-card:hover img {
+  transform: scale(1.05);
+}
+
+.business-card .card-title {
+  color: #2d6a4f;
+}
+
+.business-card .badge {
+  padding: 8px 14px;
+  border-radius: 50px;
+}
+
+.business-card p {
+  line-height: 1.9;
+}
+
+.business-card hr {
+  opacity: 0.15;
+}
+.call-btn {
+    background: linear-gradient(135deg, #2d6a4f, #52b788);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 20px;
+    transition: 0.3s ease;
+    box-shadow: 0 6px 15px rgba(45, 106, 79, 0.25);
+}
+
+.call-btn:hover {
+    transform: translateY(-3px);
+    color: white;
+    box-shadow: 0 10px 25px rgba(45, 106, 79, 0.35);
+}
