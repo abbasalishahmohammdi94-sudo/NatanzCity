@@ -1,5 +1,6 @@
-document.addEventListener("error", (event) => {
-
+document.addEventListener(
+  "error",
+  (event) => {
     const img = event.target;
 
     if (img.tagName !== "IMG") return;
@@ -10,34 +11,28 @@ document.addEventListener("error", (event) => {
 
     const slide = img.closest(".carousel-item");
 
-
     if (slide) {
+      const carousel = slide.closest(".carousel");
 
-        const carousel = slide.closest(".carousel");
+      const wasActive = slide.classList.contains("active");
 
-        const wasActive = slide.classList.contains("active");
+      slide.remove();
 
-        slide.remove();
+      if (wasActive && carousel) {
+        const nextSlide = carousel.querySelector(".carousel-item");
 
-        if (wasActive && carousel) {
-
-            const nextSlide = carousel.querySelector(".carousel-item");
-
-            if (nextSlide) {
-                nextSlide.classList.add("active");
-            }
-
+        if (nextSlide) {
+          nextSlide.classList.add("active");
         }
+      }
 
-        if (carousel && !carousel.querySelector(".carousel-item")) {
-            carousel.style.display = "none";
-        }
-
+      if (carousel && !carousel.querySelector(".carousel-item")) {
+        carousel.style.display = "none";
+      }
     } else {
-
-        img.src = "../assets/images/not-found.webp";
-        img.alt = "تصویر پیدا نشد";
-
+      img.src = "../assets/images/no-image-business.webp";
+      img.alt = "تصویر پیدا نشد";
     }
-
-}, true);
+  },
+  true,
+);

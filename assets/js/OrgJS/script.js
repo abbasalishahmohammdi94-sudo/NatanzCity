@@ -46,28 +46,24 @@ const NatanzSwiper = new Swiper(".NatanzSwiper", {
 const scrollBtn = document.getElementById("scrollTopBtn");
 
 window.addEventListener("scroll", () => {
-
-    if(window.scrollY > 300){
-        scrollBtn.style.display = "block";
-    }else{
-        scrollBtn.style.display = "none";
-    }
-
+  if (window.scrollY > 300) {
+    scrollBtn.style.display = "block";
+  } else {
+    scrollBtn.style.display = "none";
+  }
 });
 
 scrollBtn.addEventListener("click", () => {
-
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
 });
 const texts = [
-    "در حال پیدا کردن کوچه‌های قدیمی نطنز... 🏛️",
-    "داریم مسجد جامع رو آماده می‌کنیم... 😄",
-    "در حال گردگیری تاریخ نطنز... ✨",
-    "تقریباً رسیدیم، چای رو هم آماده کنید ☕😂"
+  "در حال پیدا کردن کوچه‌های قدیمی نطنز... 🏛️",
+  "داریم مسجد جامع رو آماده می‌کنیم... 😄",
+  "در حال گردگیری تاریخ نطنز... ✨",
+  "تقریباً رسیدیم، چای رو هم آماده کنید ☕😂",
 ];
 
 let i = 0;
@@ -76,23 +72,32 @@ const loaderText = document.querySelector("#loader-text");
 const loader = document.querySelector("#loader");
 
 const textInterval = setInterval(() => {
-    loaderText.textContent = texts[i];
-    i = (i + 1) % texts.length;
+  loaderText.textContent = texts[i];
+  i = (i + 1) % texts.length;
 }, 700);
 
-
 window.addEventListener("load", () => {
+  setTimeout(() => {
+    clearInterval(textInterval);
+
+    loader.style.opacity = "0";
 
     setTimeout(() => {
+      loader.style.display = "none";
+    }, 300);
+  }, 3000);
+});
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("/NatanzCity/sw.js")
 
-        clearInterval(textInterval);
+      .then((registration) => {
+        console.log("✅ Service Worker Registered");
+      })
 
-        loader.style.opacity = "0";
-
-        setTimeout(() => {
-            loader.style.display = "none";
-        }, 300);
-
-    }, 3000);
-
-}); 
+      .catch((error) => {
+        console.error("❌ Service Worker Error:", error);
+      });
+  });
+}
