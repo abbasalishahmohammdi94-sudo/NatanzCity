@@ -1,32 +1,45 @@
 let deferredPrompt;
 
-const installBtn = document.getElementById("installBtn");
+window.addEventListener("DOMContentLoaded", () => {
 
-window.addEventListener("beforeinstallprompt", (e) => {
-  console.log("قابل نصب شد ✅");
+    const installBtn = document.getElementById("installBtn");
 
-  e.preventDefault();
+    window.addEventListener("beforeinstallprompt", (e) => {
 
-  deferredPrompt = e;
+        console.log("قابل نصب شد ✅");
 
-  installBtn.style.display = "block";
-});
+        e.preventDefault();
 
-installBtn.addEventListener("click", async () => {
-  if (!deferredPrompt) {
-    alert("PWA هنوز آماده نصب نیست");
-    return;
-  }
+        deferredPrompt = e;
 
-  deferredPrompt.prompt();
+        installBtn.style.display = "block";
 
-  const choice = await deferredPrompt.userChoice;
+    });
 
-  if (choice.outcome === "accepted") {
-    console.log("نصب شد 🎉");
-  } else {
-    console.log("لغو شد");
-  }
 
-  deferredPrompt = null;
+    installBtn.addEventListener("click", async () => {
+
+        console.log("دکمه نصب زده شد");
+
+        if (!deferredPrompt) {
+
+            alert("PWA هنوز آماده نصب نیست");
+            return;
+
+        }
+
+
+        deferredPrompt.prompt();
+
+
+        const choice = await deferredPrompt.userChoice;
+
+
+        console.log(choice);
+
+
+        deferredPrompt = null;
+
+    });
+
 });
