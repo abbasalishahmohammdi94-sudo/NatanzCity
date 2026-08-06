@@ -69,105 +69,135 @@ body {
   cursor: grabbing;
 }
 .NatanzSwiper .card {
-    transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .NatanzSwiper .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-} 
-.navbar{
-    background: rgba(240, 248, 244, 0.75) !important;
-    backdrop-filter: blur(14px);
-    -webkit-backdrop-filter: blur(14px);
-    border: 1px solid rgba(255,255,255,.25);
-    box-shadow: 0 8px 24px rgba(0,0,0,.08);
-    margin: 10px;
-    border-radius: 18px;
-    top: 1rem;
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
 }
-#scrollTopBtn{
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    width: 52px;
-    height: 52px;
-    display: none;
-    border: none;
-    border-radius: 50%;
-    z-index: 999;
-    box-shadow: 0 8px 20px rgba(0,0,0,.15);
-    transition: .3s ease;
+.navbar {
+  background: rgba(240, 248, 244, 0.75) !important;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  margin: 10px;
+  border-radius: 18px;
+  top: 1rem;
 }
-#scrollTopBtn:hover{
-    transform: translateY(-4px);
+#scrollTopBtn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  width: 52px;
+  height: 52px;
+  display: none;
+  border: none;
+  border-radius: 50%;
+  z-index: 999;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+#scrollTopBtn:hover {
+  transform: translateY(-4px);
 }
 .not-found {
-    min-height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 30px;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
 }
 
 .not-found h1 {
-    font-size: 5rem;
-    color: #2d6a4f;
-    margin-bottom: 20px;
+  font-size: 5rem;
+  color: #2d6a4f;
+  margin-bottom: 20px;
 }
 
 .not-found p {
-    max-width: 700px;
-    line-height: 2.2;
-    color: #555;
-    font-size: 1.1rem;
+  max-width: 700px;
+  line-height: 2.2;
+  color: #555;
+  font-size: 1.1rem;
 }
 
 .not-found a {
-    margin-top: 25px;
-    padding: 12px 30px;
-    background: #2d6a4f;
-    color: white;
-    border-radius: 12px;
-    text-decoration: none;
-    transition: .3s;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background: #2d6a4f;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .not-found a:hover {
-    background: #40916c;
-    transform: translateY(-3px);
+  background: #40916c;
+  transform: translateY(-3px);
 }
 #loader {
-    position: fixed;
-    inset: 0;
-    background: #f8f9fa;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
+  position: fixed;
+  inset: 0;
+  background: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
 }
 
 .loader-spinner {
-    width: 45px;
-    height: 45px;
-    border: 5px solid #ddd;
-    border-top-color: #198754;
-    border-radius: 50%;
-    animation: spin   1s linear infinite;
+  width: 45px;
+  height: 45px;
+  border: 5px solid #ddd;
+  border-top-color: #198754;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
+  to {
+    transform: rotate(360deg);
+  }
 }
 @media (max-width: 991.98px) {
+  .navbar .btn {
+    width: fit-content;
+    margin: 10px auto 0;
+  }
+}
 
-    .navbar .btn {
-        width: fit-content;
-        margin: 10px auto 0;
-    }
+.pwa-install-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #198754, #146c43);
+  color: white;
+  border: none;
+  border-radius: 18px;
+  padding: 6px 10px;
+  margin: 10px;
+  font-family: Vazirmatn, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(25, 135, 84, 0.25);
+  transition: all 0.3s ease;
+}
 
+.pwa-install-btn:hover {
+  transform: translateY(-3px);
+
+  box-shadow: 0 12px 25px rgba(25, 135, 84, 0.35);
+}
+
+.pwa-install-btn:active {
+  transform: scale(0.96);
+}
+
+.pwa-install-btn span {
+  font-size: 20px;
 }
