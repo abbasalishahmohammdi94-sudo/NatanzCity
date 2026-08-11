@@ -34,29 +34,200 @@
 </div>
 
 <nav class="navbar navbar-expand-lg sticky-top">
-<div class="container">
-<a class="navbar-brand" href="#">NatanzCity</a>
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"><span class="navbar-toggler-icon"></span></button>
-<div class="collapse navbar-collapse" id="navbar">
-<ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link active" href="#">خانه</a></li>
-<li class="nav-item"><a class="nav-link" href="pages/cooming-soon.html">اخبار</a></li>
-<li class="nav-item"><a class="nav-link" href="pages/cooming-soon.html">گردشگری</a></li>
-<li class="nav-item"><a class="nav-link" href="pages/cooming-soon.html">گالری</a></li>
-<li class="nav-item"><a class="nav-link" href="pages/cooming-soon.html">ارتباط</a></li>
-<li class="nav-item"><a class="nav-link" href="pages/more.html">بیشتر</a></li>
-</ul>
+    <div class="container">
 
-<a href="pages/business-directory.html"class="btn btn-outline-success rounded-pill px-3">🔎 کسب‌وکار</a>
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            NatanzCity
+        </a>
 
-<button id="installBtn" class="pwa-install-btn">
-<span>📲</span>
-نصب اپ نطنزسیتی
-</button>
 
-</div>
-</div>
+        <!-- Mobile Menu Button -->
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#navbarOffcanvas"
+            aria-controls="navbarOffcanvas"
+            aria-label="باز کردن منو"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <!-- Desktop Navigation -->
+        <div class="collapse navbar-collapse">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        خانه
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/cooming-soon.html">
+                        اخبار
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/cooming-soon.html">
+                        گردشگری
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/cooming-soon.html">
+                        گالری
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/cooming-soon.html">
+                        ارتباط
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/more.html">
+                        بیشتر
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <a
+                href="pages/business-directory.html"
+                class="btn btn-outline-success rounded-pill px-3"
+            >
+                🔎 کسب‌وکار
+            </a>
+
+
+            <button id="installBtn" class="pwa-install-btn">
+                <span>📲</span>
+                نصب اپ نطنزسیتی
+            </button>
+
+        </div>
+
+    </div>
 </nav>
+
+
+<!-- ============================= -->
+<!--       Mobile Offcanvas        -->
+<!-- ============================= -->
+
+<div
+    class="offcanvas offcanvas-end"
+    tabindex="-1"
+    id="navbarOffcanvas"
+    aria-labelledby="navbarOffcanvasLabel"
+>
+
+    <div class="offcanvas-header">
+
+        <h5
+            class="offcanvas-title"
+            id="navbarOffcanvasLabel"
+        >
+            NatanzCity
+        </h5>
+
+        <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="بستن"
+        ></button>
+
+    </div>
+
+
+    <div class="offcanvas-body">
+
+        <ul class="navbar-nav">
+
+            <li class="nav-item">
+                <a class="nav-link active" href="#">
+                    🏠 خانه
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    href="pages/cooming-soon.html"
+                >
+                    📰 اخبار
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    href="pages/cooming-soon.html"
+                >
+                    🏛️ گردشگری
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    href="pages/cooming-soon.html"
+                >
+                    🖼️ گالری
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    href="pages/cooming-soon.html"
+                >
+                    📞 ارتباط
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a
+                    class="nav-link"
+                    href="pages/more.html"
+                >
+                    ➕ بیشتر
+                </a>
+            </li>
+
+        </ul>
+
+
+        <hr>
+
+
+        <a
+            href="pages/business-directory.html"
+            class="btn btn-outline-success rounded-pill w-100 mb-3"
+        >
+            🔎 کسب‌وکارهای نطنز
+        </a>
+
+
+        <button
+            id="installBtnMobile"
+            class="pwa-install-btn w-100"
+        >
+            <span>📲</span>
+            نصب اپ نطنزسیتی
+        </button>
+
+    </div>
+
+</div>
 <main>
 <br>
 
