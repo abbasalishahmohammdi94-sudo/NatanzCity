@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Vazir';
+    src: url("../../fonts/Vazirmatn-Regular.ttf");
+}
+@font-face {
+    font-family: 'Cinema';
+    src: url("../../fonts/Cinema.ttf");
+}
+.accordion-box{
+    margin: 1rem;
+    padding: 10px;
+    border: solid black;
+    border-radius: 10px;
+    background-color: aliceblue ;
+    font-family: 'Vazir';
+}
+.faq{
+    text-align: center;
+    margin: 2pc;
+    font-family: 'Cinema';
+    }
+
+    .accordion-button {
+	text-align: right;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.accordion-button::after {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+nav{
+    direction: ltr;
+    border-radius: 20pc;
+    margin: 10px;
+    border: solid black 1px;
+}
