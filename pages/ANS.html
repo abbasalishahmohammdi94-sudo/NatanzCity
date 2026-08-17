@@ -7,9 +7,12 @@
     <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/OrgStyle/ANS.css">
     <link rel="stylesheet" href="../assets/css/OrgStyle/style.css">
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="../assets/js/OrgJS/ANS-ai.js" defer></script>
+
 </head>
-<header>
+<body>
+    <header>
     <nav class="navbar bg-body-tertiary">
     <div class="container-fluid">
     <a class="navbar-brand" href="#">
@@ -19,7 +22,6 @@
     </div>
     </nav>
 </header>
-<body>
 <main>
     <h2 class="faq">سوالات متداول در مورد نطنز</h2>
     <div class="accordion-box">
@@ -134,6 +136,39 @@
         </div>
         </div>
     </div>
+    <br>
+ <section class="natanz-ai">
+
+    <h2>🤖 از نطنز بپرس</h2>
+
+    <p>
+        درباره نطنز، تاریخ، طبیعت، جاذبه‌ها و فرهنگ این شهر از هوش مصنوعی بپرسید.
+    </p>
+
+    <textarea
+        id="aiQuestion"
+        rows="4"
+        placeholder="مثلاً: چرا نطنز به باغ‌شهر معروف است؟"
+    ></textarea>
+
+    <button
+        id="aiAskButton"
+        type="button"
+    >
+        پرسیدن 🤖
+    </button>
+
+    <div id="aiLoading" hidden>
+        در حال فکر کردن... 🤔
+    </div>
+
+    <div
+        id="aiAnswer"
+        class="ai-answer"
+        hidden
+    ></div>
+
+</section>
 </main>
     <footer class="bg-light border-top py-5 mt-5" id="footer">
         <div class="footer-home">
