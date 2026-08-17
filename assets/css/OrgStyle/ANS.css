@@ -1,40 +1,237 @@
 @font-face {
-    font-family: 'Vazir';
-    src: url("../../fonts/Vazirmatn-Regular.ttf");
+  font-family: "Vazir";
+  src: url("../../fonts/Vazirmatn-Regular.ttf");
 }
 @font-face {
-    font-family: 'Cinema';
-    src: url("../../fonts/Cinema.ttf");
+  font-family: "Cinema";
+  src: url("../../fonts/Cinema.ttf");
 }
-.accordion-box{
-    margin: 1rem;
-    padding: 10px;
-    border: solid black;
-    border-radius: 10px;
-    background-color: aliceblue ;
-    font-family: 'Vazir';
+.accordion-box {
+  margin: 1rem;
+  padding: 10px;
+  border: solid black;
+  border-radius: 10px;
+  background-color: aliceblue;
+  font-family: "Vazir";
 }
-.faq{
-    text-align: center;
-    margin: 2pc;
-    font-family: 'Cinema';
-    }
+.faq {
+  text-align: center;
+  margin: 2pc;
+  font-family: "Cinema";
+}
 
-    .accordion-button {
-	text-align: right;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+.accordion-button {
+  text-align: right;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .accordion-button::after {
-	margin-right: 0;
-	margin-left: 0;
+  margin-right: 0;
+  margin-left: 0;
 }
 
-nav{
-    direction: ltr;
-    border-radius: 20pc;
-    margin: 10px;
-    border: solid black 1px;
+nav {
+  direction: ltr;
+  border-radius: 20pc;
+  margin: 10px;
+  border: solid black 1px;
 }
+.html,
+body {
+  overflow-x: hidden;
+}
+/* =========================
+   Natanz AI
+========================= */
+
+.natanz-ai {
+  width: min(900px, calc(100% - 30px));
+  margin: 30px auto;
+  padding: 25px;
+  box-sizing: border-box;
+
+  background: aliceblue;
+
+  border: 1px solid #000;
+  border-radius: 15px;
+
+  font-family: "Vazir", sans-serif;
+
+  direction: rtl;
+  text-align: right;
+
+  overflow: hidden;
+}
+
+/* عنوان */
+
+.natanz-ai h2 {
+  margin: 0 0 10px;
+
+  text-align: center;
+
+  font-family: "Cinema", sans-serif;
+}
+
+/* توضیحات */
+
+.natanz-ai p {
+  margin: 0 0 20px;
+
+  line-height: 2;
+
+  text-align: center;
+}
+
+/* Textarea */
+
+.natanz-ai textarea {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+
+  min-height: 120px;
+
+  padding: 12px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #777;
+  border-radius: 10px;
+
+  background: white;
+
+  font-family: "Vazir", sans-serif;
+  font-size: 15px;
+
+  direction: rtl;
+  text-align: right;
+
+  resize: vertical;
+
+  outline: none;
+
+  transition: border-color 0.2s;
+}
+
+/* Textarea Focus */
+
+.natanz-ai textarea:focus {
+  border-color: #000;
+}
+
+/* Button */
+
+#aiAskButton {
+  display: block;
+
+  margin: 15px auto 0;
+
+  padding: 10px 25px;
+
+  border: 1px solid #000;
+  border-radius: 10px;
+
+  background: white;
+
+  font-family: "Vazir", sans-serif;
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s,
+    transform 0.1s;
+}
+
+/* Button Hover */
+
+#aiAskButton:hover {
+  background-color: #f0f0f0;
+}
+
+/* Button Click */
+
+#aiAskButton:active {
+  transform: scale(0.97);
+}
+
+/* Loading */
+
+#aiLoading {
+  margin-top: 20px;
+
+  padding: 12px;
+
+  text-align: center;
+
+  border-radius: 10px;
+
+  background: white;
+
+  line-height: 2;
+}
+
+/* Answer */
+
+.ai-answer {
+  margin-top: 20px;
+
+  padding: 15px;
+
+  background: white;
+
+  border: 1px solid #ccc;
+  border-radius: 10px;
+
+  line-height: 2;
+
+  direction: rtl;
+  text-align: right;
+
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 600px) {
+  .natanz-ai {
+    width: calc(100% - 20px);
+
+    margin: 20px auto;
+
+    padding: 15px;
+  }
+
+  .natanz-ai h2 {
+    font-size: 22px;
+  }
+
+  .natanz-ai p {
+    font-size: 14px;
+  }
+
+  .natanz-ai textarea {
+    font-size: 14px;
+  }
+
+  #aiAskButton {
+    width: 100%;
+  }
+}
+
+/* =========================
+   Prevent Horizontal Scroll
+========================= */
+
+html,
+body {
+  overflow-x: hidden;
+}
+    
